@@ -18,7 +18,7 @@ function pagesRenderStatus(m){
  const d=new Date(m.generatedAt),valid=Number.isFinite(d.getTime());
  const time=valid?new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)+' KST':'수집 시각 확인 필요';
  const stale=valid&&Date.now()-d.getTime()>48*3600000,files=m.files||{};
- const core=['markets.json','stocks.json','kr-indices.json','breadth-global.json','breadth-kr.json'];
+ const core=['markets.json','stocks.json','kr-indices.json','breadth-global.json','breadth-kr.json','macro.json'];
  const oldCore=core.filter(file=>{const t=new Date(files[file]?.updatedAt).getTime();return !Number.isFinite(t)||Date.now()-t>48*3600000;}).length;
  const staleFiles=Object.values(files).filter(x=>x.status==='stale'||x.status==='missing').length;
  root.classList.toggle('snapshot-stale',stale||oldCore>0||staleFiles>0);
@@ -68,6 +68,7 @@ async function pagesApi(file,params={}){
  }
  if(file==='breadth')return pagesRead('breadth-'+(params.market==='kr'?'kr':'global')+'.json');
  if(file==='rates')return pagesRead('rates.json');
+ if(file==='macro')return pagesRead('macro.json');
  if(file==='kr-map'||file==='heatmap')return pagesRead('kr-map.json');
  throw Error('지원하지 않는 데이터입니다.');
 }
