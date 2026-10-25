@@ -1,0 +1,27 @@
+let chartRequest=0;
+async function loadRates(){
+ if(market!=='global')return;
+ let root=$('current-rates');if(!root){root=document.createElement('div');root.id='current-rates';$('fedwatch-table').before(root);}
+ root.innerHTML='<p class="sub">현재 금리와 국채 수익률을 불러오는 중…</p>';
+ try{const d=await api('rates',{}),m=Object.fromEntries(d.items.map(x=>[x.id,x]));const f=x=>Number.isFinite(x?.value)?x.value.toFixed(2)+'%':'조회 실패';
+ root.innerHTML='<div class="rate-policy"><small>미국 기준금리 · 연방기금 목표 범위</small><strong>'+f(m.DFEDTARL)+' – '+f(m.DFEDTARU)+'</strong><span>기준일 '+esc(m.DFEDTARU.date||'미제공')+'</span></div><div class="yield-grid">'+[['DGS2','2년물'],['DGS10','10년물'],['DGS30','30년물']].map(([id,n])=>'<a href="https://fred.stlouisfed.org/series/'+id+'" target="_blank" rel="noopener"><small>미국 국채 '+n+'</small><strong>'+f(m[id])+'</strong><span>'+esc(m[id].date||'미제공')+'</span></a>').join('')+'</div><p class="sub">Federal Reserve / FRED · 최신 공표치 · 국채 수익률(연 %) · 아래 FedWatch 확률표와 기준일이 다를 수 있습니다.</p>';
+ }catch(e){root.innerHTML='<p class="error">금리 정보를 불러오지 못했습니다. 새로고침해 주세요.</p>';}
+}
+function openPriceChart(symbol,name){
+ if(symbol==='TSE:TOPIX'){window.open('https://quote.jpx.co.jp/jpxhp/main/index.aspx?F=e_hist_index&qcode=151','_blank','noopener');return;}
+ const customChart=symbol.startsWith('KRX:')||['SP:SPX','NASDAQ:IXIC','NASDAQ:NDX','DJ:DJI','NASDAQ:SOX','CBOE:VIX','TWSE:IX0001','TVC:NI225','SSE:000001','SZSE:399001','SSE:000300'].includes(symbol);
+ chartRequest++;initSectorControls();const dialog=$('sector-dialog');$('sector-dialog-title').textContent=(name&&name!==symbol.split(':')[1]?name+' · ':'')+symbol.split(':')[1];
+ $('sector-dialog-body').innerHTML=customChart?'<div class="period-buttons chart-periods">'+[['1d','하루'],['1w','1주'],['1mo','1달'],['3mo','3달'],['1y','1년']].map(([p,n])=>'<button data-price-period="'+p+'" class="'+(p==='1mo'?'active':'')+'">'+n+'</button>').join('')+'</div><div id="price-chart-body"></div>':'<div class="inline-chart" id="theme-stock-chart" style="height:460px"></div>';
+ if(!dialog.open)dialog.showModal();
+ if(!customChart){tvWidget('theme-stock-chart','symbol-overview',{symbols:[[name||symbol,symbol+'|1D']],chartOnly:true,chartType:'candlesticks',upColor:'#008000',downColor:'#d00000',dateRanges:['1d|1','1w|15','1m|30','3m|60','12m|1D']});return;}
+ async function draw(period){const request=++chartRequest;$('price-chart-body').innerHTML='<p class="empty">차트를 불러오는 중…</p>';
+  try{const d=await api('price-chart',{symbol,period});if(request!==chartRequest||!dialog.open||!$('price-chart-body'))return;
+   if(symbol.startsWith('KRX:')&&(!name||name===symbol.split(':')[1])){try{const q=await api('kr-market',{kind:'stock',code:symbol.split(':')[1]});if(request!==chartRequest||!dialog.open||!$('price-chart-body'))return;$('sector-dialog-title').textContent=q.quotes[0].name+' · '+symbol.split(':')[1];}catch{$('sector-dialog-title').textContent=d.name+' · '+symbol.split(':')[1];}}
+   const rows=d.rows,W=920,H=390,left=65,right=20,top=25,bottom=45,lo=Math.min(...rows.map(x=>x.low)),hi=Math.max(...rows.map(x=>x.high)),pad=(hi-lo)*.08||1,min=lo-pad,max=hi+pad,y=v=>top+(max-v)/(max-min)*(H-top-bottom),step=(W-left-right)/rows.length,x=i=>left+step*(i+.5),bw=Math.max(1,Math.min(10,step*.65));
+   const stamp=t=>new Date(t*1000).toLocaleString('ko-KR',{timeZone:d.timezone||'Asia/Seoul',month:'2-digit',day:'2-digit',...(period==='1y'?{year:'numeric'}:{}),...(period==='1d'||period==='1w'?{hour:'2-digit',minute:'2-digit'}:{})});
+   $('price-chart-body').innerHTML='<svg role="img" aria-label="'+esc(name||d.name)+' '+period+' 캔들 차트" viewBox="0 0 '+W+' '+H+'" style="width:100%;display:block">'+Array.from({length:5},(_,i)=>{const v=min+(max-min)*i/4;return '<line x1="'+left+'" x2="'+(W-right)+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#e8dfe2" stroke-dasharray="4 5"/><text x="'+(left-8)+'" y="'+(y(v)+4)+'" text-anchor="end" fill="#897b81" font-size="11">'+Math.round(v).toLocaleString('ko-KR')+'</text>';}).join('')+rows.map((r,i)=>{const c=r.close>=r.open?'#008000':'#d00000';return '<g><title>'+esc(stamp(r.t)+' · 시가 '+Math.round(r.open)+' · 고가 '+Math.round(r.high)+' · 저가 '+Math.round(r.low)+' · 종가 '+Math.round(r.close))+'</title><line x1="'+x(i)+'" x2="'+x(i)+'" y1="'+y(r.high)+'" y2="'+y(r.low)+'" stroke="'+c+'"/><rect x="'+(x(i)-bw/2)+'" y="'+Math.min(y(r.open),y(r.close))+'" width="'+bw+'" height="'+Math.max(1,Math.abs(y(r.close)-y(r.open)))+'" fill="'+c+'"/></g>';}).join('')+[0,Math.floor((rows.length-1)/2),rows.length-1].map((i,j)=>'<text x="'+x(i)+'" y="'+(H-10)+'" text-anchor="'+(j===0?'start':j===2?'end':'middle')+'" fill="#897b81" font-size="11">'+esc(stamp(rows[i].t))+'</text>').join('')+'</svg><p class="sub">'+esc(d.source)+' · '+(d.interval==='1d'?'일봉':d.interval==='5m'?'5분봉':'30분봉')+' · '+esc(({'Asia/Seoul':'한국시간','America/New_York':'미국 동부시간','Asia/Tokyo':'일본시간','Asia/Taipei':'대만시간','Asia/Shanghai':'중국시간'}[d.timezone])||'현지시간')+' · 마지막 데이터 '+esc(stamp(rows.at(-1).t))+' · 캔들에 마우스를 올리면 가격을 확인할 수 있습니다.</p>';
+  }catch(e){if(request===chartRequest&&dialog.open&&$('price-chart-body'))$('price-chart-body').innerHTML='<p class="error">'+esc(e.message)+'</p>';}
+ }
+ document.querySelectorAll('[data-price-period]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-price-period]').forEach(q=>q.classList.toggle('active',q===b));draw(b.dataset.pricePeriod);});draw('1mo');
+}
+function openThemeStock(symbol,name){openPriceChart(symbol,name);}

@@ -1,2 +1,10 @@
-# ujlee-invest-pages
-UJLEE INVEST public dashboard: frontend and published market snapshots only. Private source and credentials are kept separately.
+# UJLEE INVEST — 공개 배포 파일
+
+이 저장소는 GitHub Pages에 게시하는 화면 파일과 공개 시장 데이터의 집계 결과만 포함합니다. 데이터 수집 코드와 인증키는 별도 비공개 저장소에서 관리합니다.
+
+- 정기적으로 수집한 시세·뉴스·시장 폭 데이터입니다. 각 화면의 수집 시각과 기준일을 확인하세요.
+- 수집 실패 시 마지막 정상 데이터가 남을 수 있으며 화면에 지연 상태를 표시합니다.
+- 투자 노트와 관심종목은 방문자의 브라우저에만 저장됩니다. 이 저장소에는 개인 기록이나 API 키가 포함되지 않습니다.
+- 새 주소로 옮길 때는 기존 사이트의 기록 내보내기와 새 사이트의 기록 가져오기를 사용하세요.
+
+원본 대시보드와 수집 작업은 이 저장소에 포함되지 않습니다.
