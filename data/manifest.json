@@ -1,15 +1,47 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T22:56:35.656Z",
+  "generatedAt": "2026-10-25T23:29:37.253Z",
   "mode": "scheduled-snapshots",
   "bootstrap": false,
   "files": {
     "rates.json": {
-      "updatedAt": "2026-10-25T22:56:36.226Z",
+      "updatedAt": "2026-10-25T23:29:37.873Z",
       "status": "ok"
     },
     "macro.json": {
-      "updatedAt": "2026-10-25T22:56:36.823Z",
+      "updatedAt": "2026-10-25T23:29:38.821Z",
+      "status": "ok"
+    },
+    "news-global.json": {
+      "updatedAt": "2026-10-25T23:29:43.410Z",
+      "status": "ok"
+    },
+    "news-us.json": {
+      "updatedAt": "2026-10-25T23:29:45.851Z",
+      "status": "ok"
+    },
+    "news-kr.json": {
+      "updatedAt": "2026-10-25T23:29:47.611Z",
+      "status": "ok"
+    },
+    "news-tw.json": {
+      "updatedAt": "2026-10-25T23:29:51.465Z",
+      "status": "ok"
+    },
+    "news-cn.json": {
+      "updatedAt": "2026-10-25T23:29:56.294Z",
+      "status": "ok"
+    },
+    "news-jp.json": {
+      "updatedAt": "2026-10-25T23:29:58.673Z",
+      "status": "ok"
+    },
+    "news-tech.json": {
+      "updatedAt": "2026-10-25T23:29:59.870Z",
+      "status": "ok"
+    },
+    "news-ai.json": {
+      "updatedAt": "2026-10-25T23:30:02.261Z",
       "status": "ok"
     },
     "breadth-global.json": {
@@ -406,38 +438,6 @@
     },
     "markets.json": {
       "updatedAt": "2026-10-25T14:18:52.194Z",
-      "status": "ok"
-    },
-    "news-ai.json": {
-      "updatedAt": "2026-10-25T21:10:33.192Z",
-      "status": "ok"
-    },
-    "news-cn.json": {
-      "updatedAt": "2026-10-25T21:10:30.165Z",
-      "status": "ok"
-    },
-    "news-global.json": {
-      "updatedAt": "2026-10-25T21:10:24.205Z",
-      "status": "ok"
-    },
-    "news-jp.json": {
-      "updatedAt": "2026-10-25T21:10:31.073Z",
-      "status": "ok"
-    },
-    "news-kr.json": {
-      "updatedAt": "2026-10-25T21:10:27.154Z",
-      "status": "ok"
-    },
-    "news-tech.json": {
-      "updatedAt": "2026-10-25T21:10:31.866Z",
-      "status": "ok"
-    },
-    "news-tw.json": {
-      "updatedAt": "2026-10-25T21:10:29.030Z",
-      "status": "ok"
-    },
-    "news-us.json": {
-      "updatedAt": "2026-10-25T21:10:25.504Z",
       "status": "ok"
     },
     "sectors-aibio-QQQ.json": {
