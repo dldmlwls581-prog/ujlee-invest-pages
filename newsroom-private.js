@@ -1,0 +1,2 @@
+/* Public pages link to the owner's loopback reader; no private data is uploaded. */
+(()=>{const url='http://127.0.0.1:8791/';const install=()=>{const tabs=document.getElementById('news-tabs');if(!tabs||tabs.querySelector('[data-telegram-private]'))return;const a=document.createElement('a');a.dataset.telegramPrivate='1';a.href=url;a.target='_blank';a.rel='noreferrer';a.textContent='텔레그램 · 12시간 이슈 ↗';a.title='이 맥의 개인용 텔레그램 뉴스룸 열기';tabs.append(a);};new MutationObserver(install).observe(document.body,{childList:true,subtree:true});install();})();
