@@ -1,55 +1,47 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T05:03:18.875Z",
+  "generatedAt": "2026-11-07T10:37:06.348Z",
   "mode": "scheduled-snapshots",
   "bootstrap": false,
   "files": {
     "rates.json": {
-      "updatedAt": "2026-11-07T05:03:19.260Z",
+      "updatedAt": "2026-11-07T10:37:07.073Z",
       "status": "ok"
     },
     "macro.json": {
-      "updatedAt": "2026-11-07T05:03:19.701Z",
+      "updatedAt": "2026-11-07T10:37:07.697Z",
       "status": "ok"
     },
     "news-global.json": {
-      "updatedAt": "2026-11-07T05:03:23.900Z",
+      "updatedAt": "2026-11-07T10:37:10.515Z",
       "status": "ok"
     },
     "news-us.json": {
-      "updatedAt": "2026-11-07T05:03:26.395Z",
+      "updatedAt": "2026-11-07T10:37:12.561Z",
       "status": "ok"
     },
     "news-kr.json": {
-      "updatedAt": "2026-11-07T05:03:28.409Z",
+      "updatedAt": "2026-11-07T10:37:14.296Z",
       "status": "ok"
     },
     "news-tw.json": {
-      "updatedAt": "2026-11-07T05:03:30.586Z",
+      "updatedAt": "2026-11-07T10:37:15.144Z",
       "status": "ok"
     },
     "news-cn.json": {
-      "updatedAt": "2026-11-07T05:03:32.609Z",
+      "updatedAt": "2026-11-07T10:37:16.306Z",
       "status": "ok"
     },
     "news-jp.json": {
-      "updatedAt": "2026-11-07T05:03:36.098Z",
+      "updatedAt": "2026-11-07T10:37:18.289Z",
       "status": "ok"
     },
     "news-tech.json": {
-      "updatedAt": "2026-11-07T05:03:38.340Z",
+      "updatedAt": "2026-11-07T10:37:20.217Z",
       "status": "ok"
     },
     "news-ai.json": {
-      "updatedAt": "2026-11-07T05:03:40.595Z",
-      "status": "ok"
-    },
-    "markets.json": {
-      "updatedAt": "2026-11-07T05:03:40.695Z",
-      "status": "ok"
-    },
-    "kr-indices.json": {
-      "updatedAt": "2026-11-07T05:03:42.250Z",
+      "updatedAt": "2026-11-07T10:37:21.053Z",
       "status": "ok"
     },
     "breadth-global.json": {
@@ -468,8 +460,16 @@
       "updatedAt": null,
       "status": "retained"
     },
+    "kr-indices.json": {
+      "updatedAt": "2026-11-07T05:03:42.250Z",
+      "status": "ok"
+    },
     "kr-map.json": {
       "updatedAt": "2026-11-07T01:53:10.945Z",
+      "status": "ok"
+    },
+    "markets.json": {
+      "updatedAt": "2026-11-07T05:03:40.695Z",
       "status": "ok"
     },
     "sectors-aibio-QQQ.json": {
