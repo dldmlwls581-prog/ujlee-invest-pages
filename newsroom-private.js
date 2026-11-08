@@ -2,7 +2,7 @@
 (()=>{
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const panel=document.createElement('section');panel.id='telegram-page';panel.className='hidden card';
- panel.innerHTML='<h2>텔레그램</h2><p>최근 24시간 · 반복적으로 다뤄진 투자 이슈 최대 30개</p><form id="telegram-unlock"><label>비밀번호 <input type="password" id="telegram-password" autocomplete="off" required></label> <button class="button" type="submit">열기</button></form><p id="telegram-status" role="status"></p><button class="button hidden" id="telegram-lock">잠그기</button><div id="telegram-results"></div>';
+ panel.innerHTML='<div class="head"><h2>텔레그램</h2><div class="tools"><a class="button" href="https://github.com/dldmlwls581-prog/ujlee-invest/actions/workflows/telegram.yml" target="_blank" rel="noreferrer">재수집 실행 · GitHub ↗</a><button class="button" type="button" id="telegram-reload">새 결과 열기</button></div></div><p class="brief-source">재수집 실행 → GitHub의 Run workflow → Run workflow. 완료 후 새 결과 열기를 누르고 비밀번호를 다시 입력하세요.</p><p>최근 24시간 · 반복적으로 다뤄진 투자 이슈 최대 30개</p><form id="telegram-unlock"><label>비밀번호 <input type="password" id="telegram-password" autocomplete="off" required></label> <button class="button" type="submit">열기</button></form><p id="telegram-status" role="status"></p><button class="button hidden" id="telegram-lock" title="현재 화면의 내용을 지우고 비밀번호 입력 화면으로 돌아갑니다. 자동 수집은 계속됩니다.">화면 잠그기</button><p class="brief-source">화면 잠금은 현재 브라우저의 내용만 지웁니다. 자동 수집은 계속됩니다.</p><div id="telegram-results"></div>';
  document.getElementById('news-page').after(panel);
  const nav=document.getElementById('newsroom-nav');
  const link=document.createElement('a');link.href='#/telegram';link.className='nav-link';link.textContent='▤　텔레그램';nav.after(link);
@@ -10,7 +10,7 @@
  const status=document.getElementById('telegram-status'),results=document.getElementById('telegram-results'),form=document.getElementById('telegram-unlock'),lock=document.getElementById('telegram-lock');
  let epoch=0,expiryTimer;
  function clear(){clearInterval(expiryTimer);epoch++;results.replaceChildren();document.getElementById('telegram-password').value='';form.hidden=false;lock.classList.add('hidden');status.textContent='';}
- lock.onclick=clear;window.addEventListener('pagehide',clear);
+ lock.onclick=()=>{clear();status.textContent='화면을 잠갔습니다. 다시 보려면 비밀번호를 입력하세요.';};document.getElementById('telegram-reload').onclick=()=>{clear();status.textContent='비밀번호를 입력하면 최신 발행 결과를 가져옵니다.';document.getElementById('telegram-password').focus();};window.addEventListener('pagehide',clear);
  window.telegramRoute=()=>{
    const yes=location.hash==='#/telegram';panel.classList.toggle('hidden',!yes);link.classList.toggle('active',yes);
    if(!yes){clear();return false;}
