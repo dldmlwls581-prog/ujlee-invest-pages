@@ -34,9 +34,9 @@
      const now=Date.now(),updated=Date.parse(payload.updatedAt),expires=Math.min(Date.parse(payload.expiresAt),updated+13*3600000);
      if(!Number.isFinite(updated)||!Number.isFinite(expires)||updated>now+300000||now>=expires)throw Error('expired');
      function renderResults(){const now=Date.now();const eligible=payload.items.map(x=>{
-       const members=x.members.filter(m=>Date.parse(m.date)>=now-24*3600000&&Date.parse(m.date)<=now).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
+       const members=x.members.filter(m=>! /보고\s*서\s*명\s*[:：]/u.test(m.text||'')&&Date.parse(m.date)>=now-24*3600000&&Date.parse(m.date)<=now).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
        return {...x,members,channelCount:new Set(members.map(m=>m.chatId)).size,mentionCount:members.length,excerpt:members[0]?.text.slice(0,450)||''};
-     }).filter(x=>x.channelCount>=2).sort((a,b)=>b.channelCount-a.channelCount||b.mentionCount-a.mentionCount);
+     }).filter(x=>x.channelCount>=2&&! /보고\s*서\s*명\s*[:：]/u.test(x.title||'')).sort((a,b)=>b.channelCount-a.channelCount||b.mentionCount-a.mentionCount);
      results.innerHTML=eligible.slice(0,30).map((x,i)=>'<article class="card"><h3>'+escape(i+1)+'. '+escape(x.title)+'</h3><p>'+escape(x.channelCount)+'개 채널 · '+escape(x.mentionCount)+'회 언급</p><p>'+escape(x.excerpt)+'</p><details><summary>관련 원문</summary>'+x.members.map(m=>'<p><strong>'+escape(m.channel)+'</strong> · '+escape(m.date)+'</p><p>'+escape(m.text)+'</p>').join('')+'</details></article>').join('')||'<p>조건에 맞는 반복 이슈가 없습니다.</p>';
      }
      renderResults();expiryTimer=setInterval(()=>{if(Date.now()>=expires){clear();status.textContent='수집 결과가 만료되었습니다. 다음 갱신 뒤 다시 열어주세요.';}else{renderResults();}},30000);
