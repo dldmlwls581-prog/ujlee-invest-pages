@@ -1,55 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T17:10:28.911Z",
+  "generatedAt": "2026-11-15T17:30:26.059Z",
   "mode": "scheduled-snapshots",
   "bootstrap": false,
   "files": {
     "rates.json": {
-      "updatedAt": "2026-11-15T17:10:29.343Z",
+      "updatedAt": "2026-11-15T17:30:27.256Z",
       "status": "ok"
     },
     "macro.json": {
-      "updatedAt": "2026-11-15T17:10:30.083Z",
+      "updatedAt": "2026-11-15T17:30:28.895Z",
       "status": "ok"
     },
     "news-global.json": {
-      "updatedAt": "2026-11-15T17:10:34.366Z",
+      "updatedAt": "2026-11-15T17:30:32.181Z",
       "status": "ok"
     },
     "news-us.json": {
-      "updatedAt": "2026-11-15T17:10:37.774Z",
+      "updatedAt": "2026-11-15T17:30:33.313Z",
       "status": "ok"
     },
     "news-kr.json": {
-      "updatedAt": "2026-11-15T17:10:39.076Z",
+      "updatedAt": "2026-11-15T17:30:34.534Z",
       "status": "ok"
     },
     "news-tw.json": {
-      "updatedAt": "2026-11-15T17:10:39.890Z",
+      "updatedAt": "2026-11-15T17:30:34.897Z",
       "status": "ok"
     },
     "news-cn.json": {
-      "updatedAt": "2026-11-15T17:10:42.065Z",
+      "updatedAt": "2026-11-15T17:30:35.457Z",
       "status": "ok"
     },
     "news-jp.json": {
-      "updatedAt": "2026-11-15T17:10:43.699Z",
+      "updatedAt": "2026-11-15T17:30:36.214Z",
       "status": "ok"
     },
     "news-tech.json": {
-      "updatedAt": "2026-11-15T17:10:45.338Z",
+      "updatedAt": "2026-11-15T17:30:37.071Z",
       "status": "ok"
     },
     "news-ai.json": {
-      "updatedAt": "2026-11-15T17:10:47.019Z",
+      "updatedAt": "2026-11-15T17:30:37.440Z",
       "status": "ok"
     },
     "markets.json": {
-      "updatedAt": "2026-11-15T17:10:47.162Z",
+      "updatedAt": "2026-11-15T17:30:37.522Z",
       "status": "ok"
     },
     "kr-indices.json": {
-      "updatedAt": "2026-11-15T17:11:05.166Z",
+      "updatedAt": "2026-11-15T17:30:38.541Z",
       "status": "ok"
     },
     "breadth-global.json": {
@@ -759,6 +759,10 @@
     "sectors.json": {
       "updatedAt": "2026-11-14T02:22:27.036Z",
       "status": "ok"
+    },
+    "sentiment-details.json": {
+      "updatedAt": null,
+      "status": "retained"
     },
     "stocks.json": {
       "updatedAt": "2026-11-14T02:22:28.868Z",
