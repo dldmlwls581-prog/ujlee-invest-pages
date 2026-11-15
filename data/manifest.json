@@ -1,55 +1,55 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T17:30:26.059Z",
+  "generatedAt": "2026-11-15T18:15:49.460Z",
   "mode": "scheduled-snapshots",
   "bootstrap": false,
   "files": {
     "rates.json": {
-      "updatedAt": "2026-11-15T17:30:27.256Z",
+      "updatedAt": "2026-11-15T18:15:49.887Z",
       "status": "ok"
     },
     "macro.json": {
-      "updatedAt": "2026-11-15T17:30:28.895Z",
+      "updatedAt": "2026-11-15T18:15:50.919Z",
       "status": "ok"
     },
     "news-global.json": {
-      "updatedAt": "2026-11-15T17:30:32.181Z",
+      "updatedAt": "2026-11-15T18:15:53.036Z",
       "status": "ok"
     },
     "news-us.json": {
-      "updatedAt": "2026-11-15T17:30:33.313Z",
+      "updatedAt": "2026-11-15T18:15:53.420Z",
       "status": "ok"
     },
     "news-kr.json": {
-      "updatedAt": "2026-11-15T17:30:34.534Z",
+      "updatedAt": "2026-11-15T18:15:54.553Z",
       "status": "ok"
     },
     "news-tw.json": {
-      "updatedAt": "2026-11-15T17:30:34.897Z",
+      "updatedAt": "2026-11-15T18:15:54.859Z",
       "status": "ok"
     },
     "news-cn.json": {
-      "updatedAt": "2026-11-15T17:30:35.457Z",
+      "updatedAt": "2026-11-15T18:15:55.384Z",
       "status": "ok"
     },
     "news-jp.json": {
-      "updatedAt": "2026-11-15T17:30:36.214Z",
+      "updatedAt": "2026-11-15T18:15:55.754Z",
       "status": "ok"
     },
     "news-tech.json": {
-      "updatedAt": "2026-11-15T17:30:37.071Z",
+      "updatedAt": "2026-11-15T18:15:56.070Z",
       "status": "ok"
     },
     "news-ai.json": {
-      "updatedAt": "2026-11-15T17:30:37.440Z",
+      "updatedAt": "2026-11-15T18:15:56.384Z",
       "status": "ok"
     },
     "markets.json": {
-      "updatedAt": "2026-11-15T17:30:37.522Z",
+      "updatedAt": "2026-11-15T18:15:56.484Z",
       "status": "ok"
     },
     "kr-indices.json": {
-      "updatedAt": "2026-11-15T17:30:38.541Z",
+      "updatedAt": "2026-11-15T18:15:57.486Z",
       "status": "ok"
     },
     "breadth-global.json": {
