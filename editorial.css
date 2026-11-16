@@ -240,3 +240,6 @@ body #market-notice{background:transparent!important;border:0!important;padding:
 @media(max-width:700px){body #outlook-page>.card:first-child .head{justify-content:flex-start}body .theme-map{grid-template-columns:1fr}body .metric-strip{grid-template-columns:repeat(2,minmax(0,1fr))}body #telegram-unlock label{display:block}body #telegram-password{width:100%;margin:10px 0 15px}}
 
 body .macro-change.up,body .scatter-legend span:first-child{color:#e09aa5}body .macro-change.down,body .scatter-legend span:nth-child(2){color:#96b6de}
+/* Zero returns and unavailable readings need a neutral dark surface as well. */
+body .index-card:not(:has(>.up,>.down)),body .sector-score.pending,body .signal-item:not(:has(>b.up,>b.down)),body .improver:not(:has(>b.up,>b.down)){background:var(--surface)!important;color:var(--ink)!important}
+body .index-mini>span:not(:has(.up,.down)),body .sector-periods>span:not(:has(.up,.down)){background:#34343a!important;color:var(--ink)!important}
