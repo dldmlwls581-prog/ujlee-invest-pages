@@ -1,51 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T19:41:24.987Z",
+  "generatedAt": "2026-11-22T01:30:23.487Z",
   "mode": "scheduled-snapshots",
   "bootstrap": false,
   "files": {
     "gpu-rental.json": {
-      "updatedAt": "2026-11-21T19:41:25.422Z",
+      "updatedAt": "2026-11-22T01:30:23.844Z",
       "status": "ok"
     },
     "rates.json": {
-      "updatedAt": "2026-11-21T19:41:25.887Z",
+      "updatedAt": "2026-11-22T01:30:24.336Z",
       "status": "ok"
     },
     "macro.json": {
-      "updatedAt": "2026-11-21T19:41:26.475Z",
+      "updatedAt": "2026-11-22T01:30:24.755Z",
       "status": "ok"
     },
     "news-global.json": {
-      "updatedAt": "2026-11-21T19:41:32.189Z",
+      "updatedAt": "2026-11-22T01:30:27.012Z",
       "status": "ok"
     },
     "news-us.json": {
-      "updatedAt": "2026-11-21T19:41:34.242Z",
+      "updatedAt": "2026-11-22T01:30:29.837Z",
       "status": "ok"
     },
     "news-kr.json": {
-      "updatedAt": "2026-11-21T19:41:35.582Z",
+      "updatedAt": "2026-11-22T01:30:31.265Z",
       "status": "ok"
     },
     "news-tw.json": {
-      "updatedAt": "2026-11-21T19:41:37.040Z",
+      "updatedAt": "2026-11-22T01:30:32.098Z",
       "status": "ok"
     },
     "news-cn.json": {
-      "updatedAt": "2026-11-21T19:41:38.663Z",
+      "updatedAt": "2026-11-22T01:30:33.106Z",
       "status": "ok"
     },
     "news-jp.json": {
-      "updatedAt": "2026-11-21T19:41:41.204Z",
+      "updatedAt": "2026-11-22T01:30:34.562Z",
       "status": "ok"
     },
     "news-tech.json": {
-      "updatedAt": "2026-11-21T19:41:42.988Z",
+      "updatedAt": "2026-11-22T01:30:37.861Z",
       "status": "ok"
     },
     "news-ai.json": {
-      "updatedAt": "2026-11-21T19:41:44.234Z",
+      "updatedAt": "2026-11-22T01:30:40.847Z",
       "status": "ok"
     },
     "breadth-global.json": {
