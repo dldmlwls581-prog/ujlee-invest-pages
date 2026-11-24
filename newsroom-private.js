@@ -1,7 +1,9 @@
 /* Encrypted snapshot viewer. Passwords, ranked text and exports remain in memory. */
 (()=>{
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const HOUR=3600000, WINDOW=12*HOUR, MAX_AGE=24*HOUR;
+ const HOUR=3600000, DAY=24*HOUR, WINDOW=12*HOUR, MAX_AGE=DAY;
+ const scheduleLabel='토·일 07:00 KST';
+ const expiredMessage='수집 결과가 만료되었습니다. 재수집 실행으로 새 결과를 받아주세요.';
  const template=/보고\s*서\s*명\s*[:：]/u;
  const formatDate=value=>{
    const d=new Date(value);if(!Number.isFinite(d.getTime()))return '미제공';
@@ -10,7 +12,7 @@
    return parts.year+'.'+parts.month+'.'+parts.day+' '+parts.hour+':'+parts.minute+':'+parts.second+' KST';
  };
  const panel=document.createElement('section');panel.id='telegram-page';panel.className='hidden card';
- panel.innerHTML='<div class="head"><h2>텔레그램</h2><div class="tools"><a class="button" href="https://github.com/dldmlwls581-prog/ujlee-invest/actions/workflows/telegram.yml" target="_blank" rel="noreferrer">재수집 실행 · GitHub ↗</a><button class="button" type="button" id="telegram-reload">새 결과 열기</button><button class="button hidden" type="button" id="telegram-copy">1~30위 전체 복사</button></div></div><p class="brief-source">재수집 실행 → GitHub의 Run workflow → Run workflow. 완료 후 새 결과 열기를 누르고 비밀번호를 다시 입력하세요.</p><p>수집 시점 기준 최근 12시간 · 투자 이슈 최대 30개</p><form id="telegram-unlock"><label>비밀번호 <input type="password" id="telegram-password" autocomplete="off" required></label> <button class="button" type="submit">열기</button></form><p id="telegram-status" role="status"></p><p id="telegram-copy-status" class="brief-source" role="status" aria-live="polite"></p><textarea id="telegram-copy-fallback" aria-label="복사할 텔레그램 전체 내용" readonly hidden></textarea><button class="button hidden" id="telegram-lock" title="현재 화면의 내용을 지우고 비밀번호 입력 화면으로 돌아갑니다. 자동 수집은 계속됩니다.">화면 잠그기</button><p class="brief-source">화면 잠금은 현재 브라우저의 내용만 지웁니다. 자동 수집은 계속됩니다.</p><div id="telegram-results"></div>';
+ panel.innerHTML='<div class="head"><h2>텔레그램</h2><div class="tools"><a class="button" href="https://github.com/dldmlwls581-prog/ujlee-invest/actions/workflows/telegram.yml" target="_blank" rel="noreferrer">재수집 실행 · GitHub ↗</a><button class="button" type="button" id="telegram-reload">새 결과 열기</button><button class="button hidden" type="button" id="telegram-copy">1~30위 전체 복사</button></div></div><p class="brief-source">자동 수집 '+scheduleLabel+' · 수동 수집은 GitHub에서 Run workflow. 완료 후 새 결과 열기를 누르고 비밀번호를 다시 입력하세요.</p><p>수집 시점 기준 최근 12시간 · 투자 이슈 최대 30개</p><form id="telegram-unlock"><label>비밀번호 <input type="password" id="telegram-password" autocomplete="off" required></label> <button class="button" type="submit">열기</button></form><p id="telegram-status" role="status"></p><p id="telegram-copy-status" class="brief-source" role="status" aria-live="polite"></p><textarea id="telegram-copy-fallback" aria-label="복사할 텔레그램 전체 내용" readonly hidden></textarea><button class="button hidden" id="telegram-lock" title="현재 화면의 내용을 지우고 비밀번호 입력 화면으로 돌아갑니다. 자동 수집은 계속됩니다.">화면 잠그기</button><p class="brief-source">화면 잠금은 현재 브라우저의 내용만 지웁니다. 자동 수집은 계속됩니다.</p><div id="telegram-results"></div>';
  document.getElementById('news-page').after(panel);
  const nav=document.getElementById('newsroom-nav');
  const link=document.createElement('a');link.href='#/telegram';link.className='nav-link';link.textContent='▤　텔레그램';nav.after(link);
@@ -25,14 +27,15 @@
  }
  function nextSlot(value){
    const ms=Date.parse(value),day=new Date(ms+9*HOUR).toISOString().slice(0,10);
-   const slots=[7,21].map(h=>Date.parse(day+'T'+String(h).padStart(2,'0')+':20:00+09:00'));
-   return slots.find(t=>t>ms)||slots[0]+24*HOUR;
+   let slot=Date.parse(day+'T07:00:00+09:00');
+   while(slot<=ms||![0,6].includes(new Date(slot+9*HOUR).getUTCDay()))slot+=DAY;
+   return slot;
  }
  function describe(payload,withReminder=true){
    let text='수집 완료: '+formatDate(payload.updatedAt);
    if(payload.collectionStartedAt)text+=' · 시작: '+formatDate(payload.collectionStartedAt);
    text+='\n수집 구간: '+formatDate(payload.since)+' ~ '+formatDate(payload.until)+' (12시간)';
-   text+='\n예약: 매일 07:20 / 21:20 KST';
+   text+='\n자동 수집: '+scheduleLabel;
    if(payload.scheduledFor)text+=' · 해당 예약: '+formatDate(payload.scheduledFor);
    else if(payload.trigger==='workflow_dispatch')text+=' · 이번 결과는 수동 수집';
    if(withReminder&&Date.now()>nextSlot(payload.updatedAt)+30*60000)text+='\n다음 예약 시간이 지났습니다. 새 결과 열기로 최신 수집 여부를 확인하세요.';
@@ -49,7 +52,7 @@
    return lines.join('\n');
  }
  copy.onclick=async()=>{
-   if(activePayload&&Date.now()>=Math.min(Date.parse(activePayload.expiresAt),Date.parse(activePayload.updatedAt)+MAX_AGE)){clear();status.textContent='수집 결과가 만료되었습니다. 다음 갱신 뒤 다시 열어주세요.';return;}
+   if(activePayload&&Date.now()>=Math.min(Date.parse(activePayload.expiresAt),Date.parse(activePayload.updatedAt)+MAX_AGE)){clear();status.textContent=expiredMessage;return;}
    const run=epoch,text=exportText();if(!text)return;
    copy.disabled=true;fallback.hidden=true;fallback.value='';copyStatus.textContent='';
    try{
@@ -96,9 +99,9 @@
      }).filter(x=>x.channelCount>=2&&!template.test(x.title||'')).sort((a,b)=>b.channelCount-a.channelCount||b.mentionCount-a.mentionCount).slice(0,30);
      results.innerHTML=ranked.map((x,i)=>'<article class="card"><h3>'+escape(i+1)+'. '+escape(x.title)+'</h3><p>'+escape(x.channelCount)+'개 채널 · '+escape(x.mentionCount)+'회 언급</p><p>'+escape(x.excerpt)+'</p><details><summary>관련 원문</summary>'+x.members.map(m=>'<p><strong>'+escape(m.channel)+'</strong> · '+escape(formatDate(m.date))+'</p><p>'+escape(m.text)+'</p>').join('')+'</details></article>').join('')||'<p>조건에 맞는 반복 이슈가 없습니다.</p>';
      status.textContent=describe(activePayload);status.style.whiteSpace='pre-line';
-     expiryTimer=setInterval(()=>{if(Date.now()>=expires){clear();status.textContent='수집 결과가 만료되었습니다. 다음 갱신 뒤 다시 열어주세요.';}else if(activePayload){status.textContent=describe(activePayload);}},30000);
+     expiryTimer=setInterval(()=>{if(Date.now()>=expires){clear();status.textContent=expiredMessage;}else if(activePayload){status.textContent=describe(activePayload);}},30000);
      form.hidden=true;lock.classList.remove('hidden');copy.disabled=!ranked.length;copy.textContent=ranked.length?'1~'+ranked.length+'위 전체 복사':'전체 복사';copy.classList.remove('hidden');
-   }catch(error){if(run===epoch){clear();status.textContent=error.message==='expired'?'수집 결과가 만료되었습니다. 다음 갱신 뒤 다시 열어주세요.':error.message==='missing'?'아직 서버 수집 결과가 게시되지 않았습니다.':'비밀번호가 맞지 않거나 데이터를 열 수 없습니다.';}}finally{password='';}
+   }catch(error){if(run===epoch){clear();status.textContent=error.message==='expired'?expiredMessage:error.message==='missing'?'아직 서버 수집 결과가 게시되지 않았습니다.':'비밀번호가 맞지 않거나 데이터를 열 수 없습니다.';}}finally{password='';}
  };
  if(location.hash==='#/telegram')window.telegramRoute();
 })();
