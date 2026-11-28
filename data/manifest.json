@@ -1,776 +1,776 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T03:43:24.744Z",
+  "generatedAt": "2026-11-28T03:52:55.983Z",
   "mode": "scheduled-snapshots",
   "bootstrap": false,
   "files": {
     "gpu-rental.json": {
-      "updatedAt": "2026-11-28T03:43:25.045Z",
+      "updatedAt": "2026-11-28T03:52:56.539Z",
       "status": "ok"
     },
     "rates.json": {
-      "updatedAt": "2026-11-28T03:43:25.637Z",
+      "updatedAt": "2026-11-28T03:53:08.373Z",
       "status": "ok"
     },
     "macro.json": {
-      "updatedAt": "2026-11-28T03:43:26.262Z",
-      "status": "ok"
-    },
-    "news-global.json": {
-      "updatedAt": "2026-11-28T03:43:28.921Z",
-      "status": "ok"
-    },
-    "news-us.json": {
-      "updatedAt": "2026-11-28T03:43:30.707Z",
-      "status": "ok"
-    },
-    "news-kr.json": {
-      "updatedAt": "2026-11-28T03:43:32.040Z",
-      "status": "ok"
-    },
-    "news-tw.json": {
-      "updatedAt": "2026-11-28T03:43:32.714Z",
-      "status": "ok"
-    },
-    "news-cn.json": {
-      "updatedAt": "2026-11-28T03:43:33.634Z",
-      "status": "ok"
-    },
-    "news-jp.json": {
-      "updatedAt": "2026-11-28T03:43:35.441Z",
-      "status": "ok"
-    },
-    "news-tech.json": {
-      "updatedAt": "2026-11-28T03:43:36.096Z",
-      "status": "ok"
-    },
-    "news-ai.json": {
-      "updatedAt": "2026-11-28T03:43:37.581Z",
+      "updatedAt": "2026-11-28T03:52:57.940Z",
       "status": "ok"
     },
     "markets.json": {
-      "updatedAt": "2026-11-28T03:43:37.686Z",
+      "updatedAt": "2026-11-28T03:52:57.982Z",
       "status": "ok"
     },
     "kr-indices.json": {
-      "updatedAt": "2026-11-28T03:43:38.569Z",
+      "updatedAt": "2026-11-28T03:52:59.289Z",
+      "status": "ok"
+    },
+    "kr-map.json": {
+      "updatedAt": "2026-11-28T03:53:08.372Z",
+      "status": "ok"
+    },
+    "sectors.json": {
+      "updatedAt": "2026-11-28T03:53:08.386Z",
+      "status": "ok"
+    },
+    "stocks.json": {
+      "updatedAt": "2026-11-28T03:53:11.076Z",
+      "status": "ok"
+    },
+    "sectors-mega-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.255Z",
+      "status": "ok"
+    },
+    "sectors-cloud-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.256Z",
+      "status": "ok"
+    },
+    "sectors-cloud-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.392Z",
+      "status": "ok"
+    },
+    "sectors-mega-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.395Z",
+      "status": "ok"
+    },
+    "sectors-memory-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.488Z",
+      "status": "ok"
+    },
+    "sectors-memory-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.490Z",
+      "status": "ok"
+    },
+    "sectors-semi-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.512Z",
+      "status": "ok"
+    },
+    "sectors-semi-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.514Z",
+      "status": "ok"
+    },
+    "sectors-cpu-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.542Z",
+      "status": "ok"
+    },
+    "sectors-cpu-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.543Z",
+      "status": "ok"
+    },
+    "sectors-equipment-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.623Z",
+      "status": "ok"
+    },
+    "sectors-equipment-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.625Z",
+      "status": "ok"
+    },
+    "sectors-powersemi-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.646Z",
+      "status": "ok"
+    },
+    "sectors-powersemi-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.647Z",
+      "status": "ok"
+    },
+    "sectors-design-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.714Z",
+      "status": "ok"
+    },
+    "sectors-design-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.715Z",
+      "status": "ok"
+    },
+    "sectors-oem-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.725Z",
+      "status": "ok"
+    },
+    "sectors-oem-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.726Z",
+      "status": "ok"
+    },
+    "sectors-crypto-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.791Z",
+      "status": "ok"
+    },
+    "sectors-crypto-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.792Z",
+      "status": "ok"
+    },
+    "sectors-neocloud-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.795Z",
+      "status": "ok"
+    },
+    "sectors-neocloud-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.796Z",
+      "status": "ok"
+    },
+    "sectors-software-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.894Z",
+      "status": "ok"
+    },
+    "sectors-software-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.897Z",
+      "status": "ok"
+    },
+    "sectors-cyber-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.899Z",
+      "status": "ok"
+    },
+    "sectors-cyber-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.900Z",
+      "status": "ok"
+    },
+    "sectors-entertainment-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:11.986Z",
+      "status": "ok"
+    },
+    "sectors-entertainment-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:11.987Z",
+      "status": "ok"
+    },
+    "sectors-telecom-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.016Z",
+      "status": "ok"
+    },
+    "sectors-telecom-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.033Z",
+      "status": "ok"
+    },
+    "sectors-datacenter-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.068Z",
+      "status": "ok"
+    },
+    "sectors-datacenter-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.071Z",
+      "status": "ok"
+    },
+    "sectors-quantum-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.098Z",
+      "status": "ok"
+    },
+    "sectors-quantum-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.099Z",
+      "status": "ok"
+    },
+    "sectors-staples-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.170Z",
+      "status": "ok"
+    },
+    "sectors-staples-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.172Z",
+      "status": "ok"
+    },
+    "sectors-consumer-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.217Z",
+      "status": "ok"
+    },
+    "sectors-consumer-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.218Z",
+      "status": "ok"
+    },
+    "sectors-defense-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.292Z",
+      "status": "ok"
+    },
+    "sectors-defense-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.294Z",
+      "status": "ok"
+    },
+    "sectors-space-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.319Z",
+      "status": "ok"
+    },
+    "sectors-space-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.324Z",
+      "status": "ok"
+    },
+    "sectors-industrial-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.433Z",
+      "status": "ok"
+    },
+    "sectors-industrial-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.435Z",
+      "status": "ok"
+    },
+    "sectors-transport-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.454Z",
+      "status": "ok"
+    },
+    "sectors-transport-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.455Z",
+      "status": "ok"
+    },
+    "sectors-robot-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.504Z",
+      "status": "ok"
+    },
+    "sectors-robot-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.514Z",
+      "status": "ok"
+    },
+    "sectors-electric-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.545Z",
+      "status": "ok"
+    },
+    "sectors-electric-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.548Z",
+      "status": "ok"
+    },
+    "sectors-nuclear-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.622Z",
+      "status": "ok"
+    },
+    "sectors-nuclear-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.623Z",
+      "status": "ok"
+    },
+    "sectors-energy-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.676Z",
+      "status": "ok"
+    },
+    "sectors-energy-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.679Z",
+      "status": "ok"
+    },
+    "sectors-refinery-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.748Z",
+      "status": "ok"
+    },
+    "sectors-refinery-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.749Z",
+      "status": "ok"
+    },
+    "sectors-materials-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.816Z",
+      "status": "ok"
+    },
+    "sectors-materials-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.821Z",
+      "status": "ok"
+    },
+    "sectors-bio-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.873Z",
+      "status": "ok"
+    },
+    "sectors-bio-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.874Z",
+      "status": "ok"
+    },
+    "sectors-aibio-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:12.909Z",
+      "status": "ok"
+    },
+    "sectors-aibio-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:12.912Z",
+      "status": "ok"
+    },
+    "sectors-auto-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:13.001Z",
+      "status": "ok"
+    },
+    "sectors-finance-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:13.002Z",
+      "status": "ok"
+    },
+    "sectors-finance-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:13.004Z",
+      "status": "ok"
+    },
+    "sectors-auto-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:13.005Z",
+      "status": "ok"
+    },
+    "sectors-china-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:13.101Z",
+      "status": "ok"
+    },
+    "sectors-china-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:13.103Z",
+      "status": "ok"
+    },
+    "sectors-travel-QQQ.json": {
+      "updatedAt": "2026-11-28T03:53:13.121Z",
+      "status": "ok"
+    },
+    "sectors-travel-SOXX.json": {
+      "updatedAt": "2026-11-28T03:53:13.122Z",
+      "status": "ok"
+    },
+    "news-global.json": {
+      "updatedAt": "2026-11-28T03:53:15.827Z",
+      "status": "ok"
+    },
+    "news-us.json": {
+      "updatedAt": "2026-11-28T03:53:17.642Z",
+      "status": "ok"
+    },
+    "news-kr.json": {
+      "updatedAt": "2026-11-28T03:53:19.345Z",
+      "status": "ok"
+    },
+    "news-tw.json": {
+      "updatedAt": "2026-11-28T03:53:20.038Z",
+      "status": "ok"
+    },
+    "news-cn.json": {
+      "updatedAt": "2026-11-28T03:53:21.778Z",
+      "status": "ok"
+    },
+    "news-jp.json": {
+      "updatedAt": "2026-11-28T03:53:24.912Z",
+      "status": "ok"
+    },
+    "news-tech.json": {
+      "updatedAt": "2026-11-28T03:53:25.550Z",
+      "status": "ok"
+    },
+    "news-ai.json": {
+      "updatedAt": "2026-11-28T03:53:27.322Z",
       "status": "ok"
     },
     "breadth-global.json": {
-      "updatedAt": "2026-11-27T19:28:53.759Z",
+      "updatedAt": "2026-11-28T03:54:08.634Z",
       "status": "ok"
     },
     "breadth-kr.json": {
-      "updatedAt": "2026-11-27T19:29:06.797Z",
+      "updatedAt": "2026-11-28T03:54:20.335Z",
+      "status": "ok"
+    },
+    "charts/SP%3ASPX.json": {
+      "updatedAt": "2026-11-28T03:54:20.586Z",
+      "status": "ok"
+    },
+    "charts/NASDAQ%3AIXIC.json": {
+      "updatedAt": "2026-11-28T03:54:20.588Z",
+      "status": "ok"
+    },
+    "charts/NASDAQ%3ANDX.json": {
+      "updatedAt": "2026-11-28T03:54:20.617Z",
+      "status": "ok"
+    },
+    "charts/NASDAQ%3ASOX.json": {
+      "updatedAt": "2026-11-28T03:54:20.840Z",
+      "status": "ok"
+    },
+    "charts/CBOE%3AVIX.json": {
+      "updatedAt": "2026-11-28T03:54:20.889Z",
+      "status": "ok"
+    },
+    "charts/DJ%3ADJI.json": {
+      "updatedAt": "2026-11-28T03:54:20.891Z",
+      "status": "ok"
+    },
+    "charts/TWSE%3AIX0001.json": {
+      "updatedAt": "2026-11-28T03:54:21.092Z",
+      "status": "ok"
+    },
+    "charts/TVC%3ANI225.json": {
+      "updatedAt": "2026-11-28T03:54:21.141Z",
+      "status": "ok"
+    },
+    "charts/SSE%3A000001.json": {
+      "updatedAt": "2026-11-28T03:54:21.214Z",
+      "status": "ok"
+    },
+    "charts/SZSE%3A399001.json": {
+      "updatedAt": "2026-11-28T03:54:21.341Z",
+      "status": "ok"
+    },
+    "charts/KRX%3AKOSPI.json": {
+      "updatedAt": "2026-11-28T03:54:21.473Z",
+      "status": "ok"
+    },
+    "charts/KRX%3AKOSDAQ.json": {
+      "updatedAt": "2026-11-28T03:54:21.585Z",
+      "status": "ok"
+    },
+    "charts/KRX%3AKOSPI200.json": {
+      "updatedAt": "2026-11-28T03:54:21.745Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A005930.json": {
+      "updatedAt": "2026-11-28T03:54:21.909Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A000660.json": {
+      "updatedAt": "2026-11-28T03:54:22.105Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A373220.json": {
+      "updatedAt": "2026-11-28T03:54:22.164Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A005380.json": {
+      "updatedAt": "2026-11-28T03:54:22.398Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A035420.json": {
+      "updatedAt": "2026-11-28T03:54:22.451Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A005935.json": {
+      "updatedAt": "2026-11-28T03:54:22.727Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A068270.json": {
+      "updatedAt": "2026-11-28T03:54:22.789Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A402340.json": {
+      "updatedAt": "2026-11-28T03:54:22.982Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A207940.json": {
+      "updatedAt": "2026-11-28T03:54:23.063Z",
+      "status": "ok"
+    },
+    "charts/SSE%3A000300.json": {
+      "updatedAt": "2026-11-28T03:54:23.161Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A009150.json": {
+      "updatedAt": "2026-11-28T03:54:23.274Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A105560.json": {
+      "updatedAt": "2026-11-28T03:54:23.386Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A032830.json": {
+      "updatedAt": "2026-11-28T03:54:23.472Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A028260.json": {
+      "updatedAt": "2026-11-28T03:54:23.580Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A055550.json": {
+      "updatedAt": "2026-11-28T03:54:23.741Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A000270.json": {
+      "updatedAt": "2026-11-28T03:54:23.823Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A006400.json": {
+      "updatedAt": "2026-11-28T03:54:23.921Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A012450.json": {
+      "updatedAt": "2026-11-28T03:54:24.076Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A086790.json": {
+      "updatedAt": "2026-11-28T03:54:24.125Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A034730.json": {
+      "updatedAt": "2026-11-28T03:54:24.249Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A034020.json": {
+      "updatedAt": "2026-11-28T03:54:24.394Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A012330.json": {
+      "updatedAt": "2026-11-28T03:54:24.408Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A329180.json": {
+      "updatedAt": "2026-11-28T03:54:24.532Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A000810.json": {
+      "updatedAt": "2026-11-28T03:54:24.705Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A316140.json": {
+      "updatedAt": "2026-11-28T03:54:24.730Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A066570.json": {
+      "updatedAt": "2026-11-28T03:54:24.859Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A138040.json": {
+      "updatedAt": "2026-11-28T03:54:25.015Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A011200.json": {
+      "updatedAt": "2026-11-28T03:54:25.032Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A005490.json": {
+      "updatedAt": "2026-11-28T03:54:25.145Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A033780.json": {
+      "updatedAt": "2026-11-28T03:54:25.327Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A010120.json": {
+      "updatedAt": "2026-11-28T03:54:25.338Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A015760.json": {
+      "updatedAt": "2026-11-28T03:54:25.441Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A180640.json": {
+      "updatedAt": "2026-11-28T03:54:25.603Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A010130.json": {
+      "updatedAt": "2026-11-28T03:54:25.668Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A009540.json": {
+      "updatedAt": "2026-11-28T03:54:25.810Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A096770.json": {
+      "updatedAt": "2026-11-28T03:54:25.906Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A298040.json": {
+      "updatedAt": "2026-11-28T03:54:25.927Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A018260.json": {
+      "updatedAt": "2026-11-28T03:54:26.112Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A086280.json": {
+      "updatedAt": "2026-11-28T03:54:26.239Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A024110.json": {
+      "updatedAt": "2026-11-28T03:54:26.294Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A051910.json": {
+      "updatedAt": "2026-11-28T03:54:26.434Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A003670.json": {
+      "updatedAt": "2026-11-28T03:54:26.530Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A042700.json": {
+      "updatedAt": "2026-11-28T03:54:26.606Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A267260.json": {
+      "updatedAt": "2026-11-28T03:54:26.770Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A017670.json": {
+      "updatedAt": "2026-11-28T03:54:26.862Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A003550.json": {
+      "updatedAt": "2026-11-28T03:54:26.948Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A035720.json": {
+      "updatedAt": "2026-11-28T03:54:27.058Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A042660.json": {
+      "updatedAt": "2026-11-28T03:54:27.134Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A010140.json": {
+      "updatedAt": "2026-11-28T03:54:27.284Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A030200.json": {
+      "updatedAt": "2026-11-28T03:54:27.436Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A278470.json": {
+      "updatedAt": "2026-11-28T03:54:27.558Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A196170.json": {
+      "updatedAt": "2026-11-28T03:54:27.577Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A028050.json": {
+      "updatedAt": "2026-11-28T03:54:27.791Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A010950.json": {
+      "updatedAt": "2026-11-28T03:54:27.845Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A003490.json": {
+      "updatedAt": "2026-11-28T03:54:27.927Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A005830.json": {
+      "updatedAt": "2026-11-28T03:54:28.145Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A006800.json": {
+      "updatedAt": "2026-11-28T03:54:28.145Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A323410.json": {
+      "updatedAt": "2026-11-28T03:54:28.282Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A047810.json": {
+      "updatedAt": "2026-11-28T03:54:28.404Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A003230.json": {
+      "updatedAt": "2026-11-28T03:54:28.444Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A307950.json": {
+      "updatedAt": "2026-11-28T03:54:28.550Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A259960.json": {
+      "updatedAt": "2026-11-28T03:54:28.696Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A272210.json": {
+      "updatedAt": "2026-11-28T03:54:28.707Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A277810.json": {
+      "updatedAt": "2026-11-28T03:54:28.783Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A0126Z0.json": {
+      "updatedAt": "2026-11-28T03:54:28.972Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A267250.json": {
+      "updatedAt": "2026-11-28T03:54:28.999Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A247540.json": {
+      "updatedAt": "2026-11-28T03:54:29.094Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A079550.json": {
+      "updatedAt": "2026-11-28T03:54:29.276Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A090430.json": {
+      "updatedAt": "2026-11-28T03:54:29.406Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A086520.json": {
+      "updatedAt": "2026-11-28T03:54:29.529Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A443060.json": {
+      "updatedAt": "2026-11-28T03:54:29.563Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A047050.json": {
+      "updatedAt": "2026-11-28T03:54:29.692Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A352820.json": {
+      "updatedAt": "2026-11-28T03:54:29.808Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A005940.json": {
+      "updatedAt": "2026-11-28T03:54:29.872Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A000150.json": {
+      "updatedAt": "2026-11-28T03:54:30.006Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A161390.json": {
+      "updatedAt": "2026-11-28T03:54:30.066Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A000720.json": {
+      "updatedAt": "2026-11-28T03:54:30.164Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A326030.json": {
+      "updatedAt": "2026-11-28T03:54:30.324Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A021240.json": {
+      "updatedAt": "2026-11-28T03:54:30.383Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A071050.json": {
+      "updatedAt": "2026-11-28T03:54:30.445Z",
+      "status": "ok"
+    },
+    "charts/KRX%3A064400.json": {
+      "updatedAt": "2026-11-28T03:54:30.580Z",
       "status": "ok"
     },
     "briefings.json": {
       "updatedAt": null,
       "status": "retained"
     },
-    "charts/CBOE%3AVIX.json": {
-      "updatedAt": "2026-11-27T19:29:07.429Z",
-      "status": "ok"
-    },
-    "charts/DJ%3ADJI.json": {
-      "updatedAt": "2026-11-27T19:29:07.338Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A000150.json": {
-      "updatedAt": "2026-11-27T19:29:18.412Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A000270.json": {
-      "updatedAt": "2026-11-27T19:29:10.885Z",
-      "status": "ok"
-    },
     "charts/KRX%3A000500.json": {
       "updatedAt": "2026-11-05T18:02:33.305Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A000660.json": {
-      "updatedAt": "2026-11-27T19:29:08.786Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A000720.json": {
-      "updatedAt": "2026-11-27T19:29:18.584Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A000810.json": {
-      "updatedAt": "2026-11-27T19:29:12.013Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A003230.json": {
-      "updatedAt": "2026-11-27T19:29:16.590Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A003490.json": {
-      "updatedAt": "2026-11-27T19:29:15.875Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A003550.json": {
-      "updatedAt": "2026-11-27T19:29:14.730Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A003670.json": {
-      "updatedAt": "2026-11-27T19:29:14.306Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A005380.json": {
-      "updatedAt": "2026-11-27T19:29:09.140Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A005490.json": {
-      "updatedAt": "2026-11-27T19:29:12.395Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A005830.json": {
-      "updatedAt": "2026-11-27T19:29:16.286Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A005930.json": {
-      "updatedAt": "2026-11-27T19:29:08.651Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A005935.json": {
-      "updatedAt": "2026-11-27T19:29:09.672Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A005940.json": {
-      "updatedAt": "2026-11-27T19:29:18.259Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A006400.json": {
-      "updatedAt": "2026-11-27T19:29:10.954Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A006800.json": {
-      "updatedAt": "2026-11-27T19:29:16.167Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A009150.json": {
-      "updatedAt": "2026-11-27T19:29:10.159Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A009540.json": {
-      "updatedAt": "2026-11-27T19:29:13.123Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A010120.json": {
-      "updatedAt": "2026-11-27T19:29:12.745Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A010130.json": {
-      "updatedAt": "2026-11-27T19:29:13.088Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A010140.json": {
-      "updatedAt": "2026-11-27T19:29:15.062Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A010950.json": {
-      "updatedAt": "2026-11-27T19:29:15.788Z",
       "status": "ok"
     },
     "charts/KRX%3A011070.json": {
       "updatedAt": "2026-11-25T19:57:21.324Z",
       "status": "ok"
     },
-    "charts/KRX%3A011200.json": {
-      "updatedAt": "2026-11-27T19:29:12.203Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A012330.json": {
-      "updatedAt": "2026-11-27T19:29:11.497Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A012450.json": {
-      "updatedAt": "2026-11-27T19:29:11.146Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A0126Z0.json": {
-      "updatedAt": "2026-11-27T19:29:17.224Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A015760.json": {
-      "updatedAt": "2026-11-27T19:29:12.722Z",
-      "status": "ok"
-    },
     "charts/KRX%3A016360.json": {
       "updatedAt": "2026-11-07T01:55:21.556Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A017670.json": {
-      "updatedAt": "2026-11-27T19:29:14.705Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A018260.json": {
-      "updatedAt": "2026-11-27T19:29:14.057Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A021240.json": {
-      "updatedAt": "2026-11-27T19:29:18.929Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A024110.json": {
-      "updatedAt": "2026-11-27T19:29:13.854Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A028050.json": {
-      "updatedAt": "2026-11-27T19:29:15.909Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A028260.json": {
-      "updatedAt": "2026-11-27T19:29:10.567Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A030200.json": {
-      "updatedAt": "2026-11-27T19:29:15.446Z",
       "status": "ok"
     },
     "charts/KRX%3A032640.json": {
       "updatedAt": "2026-11-26T19:37:49.276Z",
       "status": "ok"
     },
-    "charts/KRX%3A032830.json": {
-      "updatedAt": "2026-11-27T19:29:10.470Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A033780.json": {
-      "updatedAt": "2026-11-27T19:29:12.604Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A034020.json": {
-      "updatedAt": "2026-11-27T19:29:11.658Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A034730.json": {
-      "updatedAt": "2026-11-27T19:29:11.294Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A035420.json": {
-      "updatedAt": "2026-11-27T19:29:09.339Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A035720.json": {
-      "updatedAt": "2026-11-27T19:29:14.857Z",
-      "status": "ok"
-    },
     "charts/KRX%3A036930.json": {
       "updatedAt": "2026-11-25T19:57:21.323Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A042660.json": {
-      "updatedAt": "2026-11-27T19:29:15.056Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A042700.json": {
-      "updatedAt": "2026-11-27T19:29:14.379Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A047050.json": {
-      "updatedAt": "2026-11-27T19:29:18.057Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A047810.json": {
-      "updatedAt": "2026-11-27T19:29:16.592Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A051910.json": {
-      "updatedAt": "2026-11-27T19:29:14.004Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A055550.json": {
-      "updatedAt": "2026-11-27T19:29:10.781Z",
       "status": "ok"
     },
     "charts/KRX%3A064350.json": {
       "updatedAt": "2026-11-21T03:12:50.347Z",
       "status": "ok"
     },
-    "charts/KRX%3A064400.json": {
-      "updatedAt": "2026-11-27T19:29:19.072Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A066570.json": {
-      "updatedAt": "2026-11-27T19:29:11.997Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A068270.json": {
-      "updatedAt": "2026-11-27T19:29:09.469Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A071050.json": {
-      "updatedAt": "2026-11-27T19:29:18.924Z",
-      "status": "ok"
-    },
     "charts/KRX%3A078930.json": {
       "updatedAt": "2026-11-24T05:59:41.690Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A079550.json": {
-      "updatedAt": "2026-11-27T19:29:17.689Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A086280.json": {
-      "updatedAt": "2026-11-27T19:29:13.655Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A086520.json": {
-      "updatedAt": "2026-11-27T19:29:17.934Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A086790.json": {
-      "updatedAt": "2026-11-27T19:29:11.323Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A090430.json": {
-      "updatedAt": "2026-11-27T19:29:17.702Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A096770.json": {
-      "updatedAt": "2026-11-27T19:29:13.341Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A105560.json": {
-      "updatedAt": "2026-11-27T19:29:10.398Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A138040.json": {
-      "updatedAt": "2026-11-27T19:29:12.365Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A161390.json": {
-      "updatedAt": "2026-11-27T19:29:18.596Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A180640.json": {
-      "updatedAt": "2026-11-27T19:29:12.985Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A196170.json": {
-      "updatedAt": "2026-11-27T19:29:15.440Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A207940.json": {
-      "updatedAt": "2026-11-27T19:29:10.054Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A247540.json": {
-      "updatedAt": "2026-11-27T19:29:17.370Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A259960.json": {
-      "updatedAt": "2026-11-27T19:29:16.909Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A267250.json": {
-      "updatedAt": "2026-11-27T19:29:17.369Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A267260.json": {
-      "updatedAt": "2026-11-27T19:29:14.498Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A272210.json": {
-      "updatedAt": "2026-11-27T19:29:16.901Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A277810.json": {
-      "updatedAt": "2026-11-27T19:29:16.963Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A278470.json": {
-      "updatedAt": "2026-11-27T19:29:15.454Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A298040.json": {
-      "updatedAt": "2026-11-27T19:29:13.408Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A307950.json": {
-      "updatedAt": "2026-11-27T19:29:16.596Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A316140.json": {
-      "updatedAt": "2026-11-27T19:29:11.824Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A323410.json": {
-      "updatedAt": "2026-11-27T19:29:16.236Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A326030.json": {
-      "updatedAt": "2026-11-27T19:29:18.687Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A329180.json": {
-      "updatedAt": "2026-11-27T19:29:11.655Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A352820.json": {
-      "updatedAt": "2026-11-27T19:29:18.273Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A373220.json": {
-      "updatedAt": "2026-11-27T19:29:09.022Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A402340.json": {
-      "updatedAt": "2026-11-27T19:29:09.814Z",
-      "status": "ok"
-    },
-    "charts/KRX%3A443060.json": {
-      "updatedAt": "2026-11-27T19:29:17.997Z",
-      "status": "ok"
-    },
-    "charts/KRX%3AKOSDAQ.json": {
-      "updatedAt": "2026-11-27T19:29:08.306Z",
-      "status": "ok"
-    },
-    "charts/KRX%3AKOSPI.json": {
-      "updatedAt": "2026-11-27T19:29:08.040Z",
-      "status": "ok"
-    },
-    "charts/KRX%3AKOSPI200.json": {
-      "updatedAt": "2026-11-27T19:29:08.401Z",
-      "status": "ok"
-    },
-    "charts/NASDAQ%3AIXIC.json": {
-      "updatedAt": "2026-11-27T19:29:07.069Z",
-      "status": "ok"
-    },
-    "charts/NASDAQ%3ANDX.json": {
-      "updatedAt": "2026-11-27T19:29:07.122Z",
-      "status": "ok"
-    },
-    "charts/NASDAQ%3ASOX.json": {
-      "updatedAt": "2026-11-27T19:29:07.403Z",
-      "status": "ok"
-    },
-    "charts/SP%3ASPX.json": {
-      "updatedAt": "2026-11-27T19:29:07.062Z",
-      "status": "ok"
-    },
-    "charts/SSE%3A000001.json": {
-      "updatedAt": "2026-11-27T19:29:07.734Z",
-      "status": "ok"
-    },
-    "charts/SSE%3A000300.json": {
-      "updatedAt": "2026-11-27T19:29:10.217Z",
-      "status": "ok"
-    },
-    "charts/SZSE%3A399001.json": {
-      "updatedAt": "2026-11-27T19:29:07.949Z",
-      "status": "ok"
-    },
-    "charts/TVC%3ANI225.json": {
-      "updatedAt": "2026-11-27T19:29:07.693Z",
-      "status": "ok"
-    },
-    "charts/TWSE%3AIX0001.json": {
-      "updatedAt": "2026-11-27T19:29:07.630Z",
       "status": "ok"
     },
     "fear-greed.json": {
       "updatedAt": null,
       "status": "retained"
     },
-    "kr-map.json": {
-      "updatedAt": "2026-11-27T19:27:37.384Z",
-      "status": "ok"
-    },
-    "sectors-aibio-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.438Z",
-      "status": "ok"
-    },
-    "sectors-aibio-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.439Z",
-      "status": "ok"
-    },
-    "sectors-auto-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.653Z",
-      "status": "ok"
-    },
-    "sectors-auto-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.654Z",
-      "status": "ok"
-    },
-    "sectors-bio-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.760Z",
-      "status": "ok"
-    },
-    "sectors-bio-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.829Z",
-      "status": "ok"
-    },
-    "sectors-china-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.785Z",
-      "status": "ok"
-    },
-    "sectors-china-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.786Z",
-      "status": "ok"
-    },
-    "sectors-cloud-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:40.712Z",
-      "status": "ok"
-    },
-    "sectors-cloud-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:40.793Z",
-      "status": "ok"
-    },
-    "sectors-consumer-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.764Z",
-      "status": "ok"
-    },
-    "sectors-consumer-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.780Z",
-      "status": "ok"
-    },
-    "sectors-cpu-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:40.974Z",
-      "status": "ok"
-    },
-    "sectors-cpu-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:40.975Z",
-      "status": "ok"
-    },
-    "sectors-crypto-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.311Z",
-      "status": "ok"
-    },
-    "sectors-crypto-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.316Z",
-      "status": "ok"
-    },
-    "sectors-cyber-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.423Z",
-      "status": "ok"
-    },
-    "sectors-cyber-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.425Z",
-      "status": "ok"
-    },
-    "sectors-datacenter-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.611Z",
-      "status": "ok"
-    },
-    "sectors-datacenter-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.613Z",
-      "status": "ok"
-    },
-    "sectors-defense-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.865Z",
-      "status": "ok"
-    },
-    "sectors-defense-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.868Z",
-      "status": "ok"
-    },
-    "sectors-design-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.144Z",
-      "status": "ok"
-    },
-    "sectors-design-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.145Z",
-      "status": "ok"
-    },
-    "sectors-electric-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.117Z",
-      "status": "ok"
-    },
-    "sectors-electric-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.118Z",
-      "status": "ok"
-    },
-    "sectors-energy-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.232Z",
-      "status": "ok"
-    },
-    "sectors-energy-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.234Z",
-      "status": "ok"
-    },
-    "sectors-entertainment-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.508Z",
-      "status": "ok"
-    },
-    "sectors-entertainment-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.511Z",
-      "status": "ok"
-    },
-    "sectors-equipment-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.038Z",
-      "status": "ok"
-    },
-    "sectors-equipment-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.040Z",
-      "status": "ok"
-    },
-    "sectors-finance-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.546Z",
-      "status": "ok"
-    },
-    "sectors-finance-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.548Z",
-      "status": "ok"
-    },
-    "sectors-industrial-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.995Z",
-      "status": "ok"
-    },
-    "sectors-industrial-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.996Z",
-      "status": "ok"
-    },
-    "sectors-materials-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.336Z",
-      "status": "ok"
-    },
-    "sectors-materials-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.337Z",
-      "status": "ok"
-    },
-    "sectors-mega-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:40.712Z",
-      "status": "ok"
-    },
-    "sectors-mega-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:40.791Z",
-      "status": "ok"
-    },
-    "sectors-memory-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:40.913Z",
-      "status": "ok"
-    },
-    "sectors-memory-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:40.916Z",
-      "status": "ok"
-    },
-    "sectors-neocloud-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.256Z",
-      "status": "ok"
-    },
-    "sectors-neocloud-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.258Z",
-      "status": "ok"
-    },
-    "sectors-nuclear-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.149Z",
-      "status": "ok"
-    },
-    "sectors-nuclear-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.150Z",
-      "status": "ok"
-    },
-    "sectors-oem-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.200Z",
-      "status": "ok"
-    },
-    "sectors-oem-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.201Z",
-      "status": "ok"
-    },
-    "sectors-powersemi-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.086Z",
-      "status": "ok"
-    },
-    "sectors-powersemi-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.090Z",
-      "status": "ok"
-    },
-    "sectors-quantum-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.651Z",
-      "status": "ok"
-    },
-    "sectors-quantum-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.652Z",
-      "status": "ok"
-    },
-    "sectors-refinery-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.252Z",
-      "status": "ok"
-    },
-    "sectors-refinery-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.253Z",
-      "status": "ok"
-    },
-    "sectors-robot-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.062Z",
-      "status": "ok"
-    },
-    "sectors-robot-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.063Z",
-      "status": "ok"
-    },
-    "sectors-semi-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:40.908Z",
-      "status": "ok"
-    },
-    "sectors-semi-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:40.915Z",
-      "status": "ok"
-    },
-    "sectors-software-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.399Z",
-      "status": "ok"
-    },
-    "sectors-software-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.401Z",
-      "status": "ok"
-    },
-    "sectors-space-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.882Z",
-      "status": "ok"
-    },
-    "sectors-space-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.884Z",
-      "status": "ok"
-    },
-    "sectors-staples-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.734Z",
-      "status": "ok"
-    },
-    "sectors-staples-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.735Z",
-      "status": "ok"
-    },
-    "sectors-telecom-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.548Z",
-      "status": "ok"
-    },
-    "sectors-telecom-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.549Z",
-      "status": "ok"
-    },
-    "sectors-transport-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:41.991Z",
-      "status": "ok"
-    },
-    "sectors-transport-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:41.992Z",
-      "status": "ok"
-    },
-    "sectors-travel-QQQ.json": {
-      "updatedAt": "2026-11-27T19:27:42.882Z",
-      "status": "ok"
-    },
-    "sectors-travel-SOXX.json": {
-      "updatedAt": "2026-11-27T19:27:42.883Z",
-      "status": "ok"
-    },
-    "sectors.json": {
-      "updatedAt": "2026-11-27T19:27:37.537Z",
-      "status": "ok"
-    },
     "sentiment-details.json": {
       "updatedAt": null,
       "status": "retained"
-    },
-    "stocks.json": {
-      "updatedAt": "2026-11-27T19:27:40.457Z",
-      "status": "ok"
     },
     "telegram.enc.json": {
       "updatedAt": null,
